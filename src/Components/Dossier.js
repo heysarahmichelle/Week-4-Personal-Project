@@ -15,8 +15,6 @@ class Dossier extends Component{
                 <section className='background-box'>
                     <div className='top-secret-header'>
                         <p>TOP  SECRETS</p>
-                        <p></p>
-                        <p></p>
                     </div>
                 </section>
             </div>
