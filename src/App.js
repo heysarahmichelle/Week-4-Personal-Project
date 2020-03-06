@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import Header from './Components/Header';
+import LipsAreSealed from './Components/LipsAreSealed'
+import Dossier from './Components/Dossier'
 import './App.css';
 
 class App extends Component{
@@ -11,16 +14,20 @@ class App extends Component{
   render(){
     return(
       <div className="App">
+        <Header />
+        <div className="section-container">
         
-        <div className="App-header">
-          <p className="taskbar">Home</p>
-          <p className="taskbar">Secrets</p>
-          <p className="taskbar">Contact</p>
+          <div className="grey-body-container">
+          </div>
+          <div className="white-input-section">
+            <input className='your-secret-here-1' placeholder= "             What's your deepest, darkest secret?"/>
+            <button className='your-secret-here-2' onHover>Tell Me</button>
+          </div>
         </div>
-        <div className="body-container">
-          <input className='your-secret-here-1' placeholder= "What's your secret?"/>
-          <button className='your-secret-here-2'>Tell Me!</button>
-        </div>
+        <LipsAreSealed />
+          <div className="grey-body-container">
+          </div>
+        <Dossier />
         <div className="secret-answers">
         </div>
       </div>

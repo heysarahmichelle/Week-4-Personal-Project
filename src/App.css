@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inconsolata&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,56 +50,65 @@ table {
 	border-spacing: 0;
 }
 
-.App {
-  text-align: center;
-  background: #282c34;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('https://clip.cookdiary.net/sites/default/files/wallpaper/mommy-clipart/222889/mommy-clipart-shh-222889-7481097.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70% 80%;
-}
-.App-header {
-  width: 100vw;
-  height: 15vh;
+header {
+  height: 425px;
+  border-box: box-sizing;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+  color: #e3ddd1;
+  padding: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 95px;
+  margin-bottom: 25px;
+}
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.App-header p{
-  margin-right: 80px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #e3ddd1;
-}
-.body-container {
+.grey-body-container {
   background: #414853;
-  height: 20vh;
+  height: .001vh;
   width: 100vw;
-  opacity: 45%;
   flex-direction: column;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5px;
+  opacity: 25%;
+  border-style: double;
+}
+.white-input-section {
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 .your-secret-here-1 {
-  width: 200px;
-  height: 25px;
+  width: 250px;
+  height: 20px;
   border-radius: 5px;
   border-style: none;
+  background-color: #F9F9F9;
+  margin-bottom: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.your-secret-here-2 {
-  width: 87px;
-  height: 25px;
+button {
+  width: 75px;
+  height: 18px;
   border-radius: 5px;
   border-style: none;
+  font-weight: 700;
+  font-family: 'Homemade Apple', cursive;
+  /* background-color: #FFE7DC; */
+  background-color: #E8D6D4;
+  /* background-color: #C98679; */
 }
-.secret-answers {
-  flex-direction: column-reverse;
-  display: flex;
-  margin-top: 493px;
-  background: #414853;
-  opacity: 20%;
-}
+
 
